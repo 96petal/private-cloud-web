@@ -1,14 +1,10 @@
 ## Component Name
 
 > author: Jack Ma
-
-> date: 2018-12-25
-
-> review date: 2018-12-26
-
-> review result: agree
-
-> description: ...
+date: 2018-12-25
+review date: 2018-12-26
+review result: agree
+description: ...
 
 ### Attributes
 
