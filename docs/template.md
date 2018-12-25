@@ -29,13 +29,13 @@
 请描述组件内部的工作流程并用伪代码说明
 
 ```
-	if (this.attr) {
-		...
-	}
+if (this.attr) {
+	...
+}
 ```
 
 ### Demo
 
 ```
-	<demo></demo>
+<demo></demo>
 ```
