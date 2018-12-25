@@ -1,17 +1,38 @@
 module.exports = {
-  root: true,
-  env: {
-    node: true,
-  },
-  extends: [
-    'plugin:vue/essential',
-    '@vue/airbnb',
-  ],
-  rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-  },
-  parserOptions: {
-    parser: 'babel-eslint',
-  },
-};
+	root: true,
+	env: {
+		node: true
+	},
+	extends: [
+		'plugin:vue/strongly-recommended',
+		'@vue/standard'
+	],
+	rules: {
+		// allow async-await
+		'generator-star-spacing': 'off',
+		'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+		'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+		'vue/html-indent': ['error', 'tab'],
+		'vue/component-name-in-template-casing': 'off',
+		'indent': ['error', 'tab'],
+		'no-tabs': 'off',
+		'vue/max-attributes-per-line': ['warn', {
+			'singleline': 3,
+			'multiline': {
+				'max': 1,
+				'allowFirstLine': false
+			}
+		}]
+	},
+	parserOptions: {
+		parser: 'babel-eslint'
+	},
+	overrides: [
+		{
+			files: ['*.vue'],
+			rules: {
+				indent: 'off'
+			}
+		}
+	]
+}
